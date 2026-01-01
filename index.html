@@ -1,168 +1,151 @@
 <!DOCTYPE html>
-<html lang="en">
+<html>
 <head>
-<meta charset="UTF-8" />
-<meta name="viewport" content="width=device-width, initial-scale=1.0" />
-<title>SS Royal Inn – AC Rooms & Function Hall | Madhurawada</title>
+<title>SS Royal Inn — AC Rooms & Function Hall | Madhurawada</title>
+<meta name="viewport" content="width=device-width, initial-scale=1">
 
 <style>
-:root{
-  --black:#0b0b0b;
-  --gold:#d4af37;
-  --white:#f5f5f5;
-}
 
 body{
   margin:0;
-  font-family: Arial, Poppins, sans-serif;
-  background:var(--black);
-  color:var(--white);
-}
-
-header{
+  font-family: poppins, sans-serif;
   background:#000;
-  border-bottom:1px solid var(--gold);
-  padding:16px 0;
+  color:#fff;
 }
 
-.container{
-  width:90%;
-  max-width:1100px;
-  margin:auto;
+/* Hero Section */
+.hero{
+  background:linear-gradient(to bottom, rgba(0,0,0,.6), rgba(0,0,0,.9)),
+  url("photo1.jpg") center/cover no-repeat;
+  height:85vh;
+  display:flex;
+  flex-direction:column;
+  justify-content:center;
+  align-items:center;
+  text-align:center;
 }
 
 .logo{
-  font-size:26px;
+  font-size:58px;
   font-weight:700;
-  color:var(--gold);
-  letter-spacing:1px;
+  letter-spacing:3px;
+  color:#d4af37;
 }
 
-section{
-  padding:28px 0;
+.tag{
+  font-size:18px;
+  margin-top:10px;
+  opacity:0.9;
 }
 
-h2{
-  color:var(--gold);
-  margin-bottom:6px;
+.btn{
+  margin-top:22px;
+  padding:12px 28px;
+  border:1px solid #d4af37;
+  color:#d4af37;
+  background:transparent;
+  border-radius:12px;
+  font-weight:600;
+  cursor:pointer;
+  transition:.4s;
+}
+
+.btn:hover{
+  background:#d4af37;
+  color:#000;
+  transform:scale(1.05);
+}
+
+/* Section */
+.section{
+  padding:50px 20px;
+  max-width:900px;
+  margin:auto;
+}
+
+.heading{
+  font-size:26px;
+  color:#d4af37;
+  margin-bottom:12px;
 }
 
 .card{
   background:#111;
-  border:1px solid #2b2b2b;
-  border-radius:14px;
-  padding:14px;
+  padding:18px;
+  border-radius:16px;
+  border:1px solid #333;
+  margin-top:12px;
 }
 
-.gallery-grid{
-  display:grid;
-  grid-template-columns: repeat(auto-fit, minmax(230px,1fr));
-  gap:12px;
-}
-
-.gallery-grid img{
+/* Gallery */
+.gallery img{
   width:100%;
-  border-radius:10px;
-  border:1px solid var(--gold);
+  border-radius:12px;
+  margin-top:10px;
+  border:1px solid #444;
 }
 
-.btn{
-  display:inline-block;
-  padding:12px 18px;
-  margin-top:8px;
-  border-radius:10px;
-  border:1px solid var(--gold);
-  color:var(--gold);
-  text-decoration:none;
-}
-
-.btn:hover{
-  background:var(--gold);
-  color:#000;
-}
-
-footer{
+/* Footer */
+.footer{
   text-align:center;
-  padding:20px 0;
-  border-top:1px solid #2b2b2b;
+  padding:25px;
+  color:#aaa;
 }
+
+.gold{color:#d4af37;}
 </style>
 </head>
 
 <body>
 
-<header>
-  <div class="container">
-    <div class="logo">SS ROYAL INN</div>
-  </div>
-</header>
+<div class="hero">
+  <div class="logo">SS ROYAL INN</div>
+  <div class="tag">Premium AC Rooms • Function Hall • Madhurawada</div>
 
-<section>
-  <div class="container">
-    <h2>About SS Royal Inn</h2>
-    <div class="card">
-      <p>
-        Premium & budget-friendly <b>AC Rooms</b> and a mini <b>Function Hall</b> for
-        small birthday parties, gatherings, and events — located in
-        Madhurawada, Visakhapatnam. Clean rooms, peaceful stay, and
-        easy access to Vizag Conventions & Law College Bus Bay.
-      </p>
-    </div>
-  </div>
-</section>
+  <a href="https://wa.me/919963230062" target="_blank">
+    <button class="btn">Book on WhatsApp</button>
+  </a>
+</div>
 
-<section>
-  <div class="container">
-    <h2>AC Rooms</h2>
-    <div class="card">
-      <p>Single-type spacious AC rooms with attached bath, 24×7 water, TV & parking.</p>
-      <a class="btn" href="https://wa.me/919963230062?text=Hi%2C+I+want+to+book+a+room+at+SS+Royal+Inn">Book Room on WhatsApp</a>
-    </div>
+<div class="section">
+  <div class="heading">About Us</div>
+  <div class="card">
+    SS Royal Inn offers clean & comfortable AC rooms in Madhurawada,
+    near Law College Bus Bay & Vizag Conventions. Ideal for families,
+    travellers and event guests. We also provide a small function hall
+    for birthday parties & celebrations.
   </div>
-</section>
 
-<section>
-  <div class="container">
-    <h2>Mini Function Hall</h2>
-    <div class="card">
-      <p>Ideal for small birthdays, poojas, meetings and family functions.</p>
-      <a class="btn" href="https://wa.me/919963230062?text=Hi%2C+I+want+to+book+the+Function+Hall+at+SS+Royal+Inn">Function Hall Enquiry</a>
-    </div>
+  <div class="heading">Facilities</div>
+  <div class="card">
+    • Fully Air-Conditioned Rooms <br>
+    • Hot Water & Clean Bathrooms <br>
+    • 24/7 Support <br>
+    • Parking Available <br>
+    • Mini Function Hall for Events
   </div>
-</section>
 
-<section>
-  <div class="container">
-    <h2>Photos</h2>
-    <div class="card">
-      <div class="gallery-grid">
-        <img src="photo1.jpg" alt="Exterior" />
-        <img src="photo2.jpg" alt="Room" />
-        <img src="photo3.jpg" alt="Room" />
-        <img src="photo4.jpg" alt="Bathroom" />
-        <img src="photo5.jpg" alt="interior" />
-        </div>
-    </div>
+  <div class="heading">Gallery</div>
+  <div class="gallery">
+    <img src="photo1.jpg">
+    <img src="photo2.jpg">
+    <img src="photo3.jpg">
   </div>
-</section>
 
-<section>
-  <div class="container">
-    <h2>Contact</h2>
-    <div class="card">
-      <p><b>Phone:</b> 9963230062 / 9008509798 / 6302012033</p>
-      <p>
-        <b>Address:</b> MIG-II 238, Sapthagiri Colony, Opp. Vizag Conventions,<br>
-        Near Law College Bus Bay, Madhurawada, Visakhapatnam – 530041
-      </p>
-      <a class="btn" href="https://maps.app.goo.gl/">Open in Google Maps</a>
-    </div>
+  <div class="heading">Contact</div>
+  <div class="card">
+    📍 MIG-II 238, Sapthagiri Colony, Opp Vizag Conventions,
+    Near Law College Bus Bay, Madhurawada, Visakhapatnam-530041 <br><br>
+
+    📞 9963230062 / 9008509798 / 6302012033 <br><br>
+
+    ✉️ ssroyalinnvizag@gmail.com
   </div>
-</section>
+</div>
 
-<footer>
-  © SS Royal Inn — Visakhapatnam
-</footer>
+<div class="footer">
+  © SS ROYAL INN — Stay Royal, Stay Comfortable 🖤
+</div>
 
 </body>
 </html>
