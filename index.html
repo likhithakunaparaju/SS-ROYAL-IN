@@ -105,6 +105,75 @@ body{
   <a href="https://wa.me/919963230062" target="_blank">
     <button class="btn">Book on WhatsApp</button>
   </a>
+</div>
+  <section class="booking-section">
+  <h2>Book Your Stay</h2>
+
+  <form id="bookingForm">
+    <input type="text" id="name" placeholder="Your Name" required>
+    <input type="tel" id="phone" placeholder="Phone Number" required>
+    <input type="date" id="checkin" required>
+    <input type="date" id="checkout" required>
+    <textarea id="message" placeholder="Any Special Request"></textarea>
+
+    <button type="button" onclick="sendBooking()">Book via WhatsApp</button>
+  </form>
+</section>
+
+<script>
+function sendBooking() {
+  const name = document.getElementById("name").value;
+  const phone = document.getElementById("phone").value;
+  const checkin = document.getElementById("checkin").value;
+  const checkout = document.getElementById("checkout").value;
+  const message = document.getElementById("message").value;
+
+  const text = `Room Booking Request%0A
+Name: ${name}%0A
+Phone: ${phone}%0A
+Check-In: ${checkin}%0A
+Check-Out: ${checkout}%0A
+Request: ${message}`;
+
+  window.open(
+    "https://wa.me/9963230062?text=" + text,
+    "_blank"
+  );
+}
+</script>
+
+<style>
+.booking-section{
+  padding: 40px;
+  text-align:center;
+}
+.booking-section h2{
+  color:#d4af37;
+  font-size:24px;
+}
+#bookingForm{
+  max-width:420px;
+  margin:auto;
+  display:grid;
+  gap:12px;
+}
+#bookingForm input,
+#bookingForm textarea{
+  padding:10px;
+  border-radius:8px;
+  border:1px solid #444;
+  background:#111;
+  color:#fff;
+}
+#bookingForm button{
+  padding:12px;
+  border:none;
+  border-radius:10px;
+  background:#d4af37;
+  font-weight:600;
+  cursor:pointer;
+}
+</style>
 
 
 <div class="section">
@@ -149,6 +218,7 @@ body{
 
 </body>
 </html>
+
 
 
 
